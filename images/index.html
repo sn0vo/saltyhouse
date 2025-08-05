@@ -1,0 +1,227 @@
+<html><head><base href="https://example.com/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>СольТрейд - Продажа соли</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.top-info {
+    background: #f8f8f8;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.top-info-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #666;
+}
+
+.header {
+    background: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 500;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #3498db;
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+.product-card {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.product-icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px;
+}
+
+.product-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.product-description {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.footer {
+    background: #2c3e50;
+    color: #fff;
+    padding: 40px 0;
+    margin-top: 40px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+    <div class="top-info">
+        <div class="top-info-container">
+            <span>📍 г. Москва, ул. Солевая, 123</span>
+            <span>🕒 Пн-Пт: 9:00-18:00</span>
+            <span>📞 +7 (999) 123-45-67</span>
+            <span>✉️ info@salt-trade.ru</span>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="header-container">
+            <a href="/" class="logo">СольТрейд</a>
+            <nav class="nav">
+                <a href="/">Главная</a>
+                <a href="/products">Продукция</a>
+                <a href="/about">О нас</a>
+                <a href="/contacts">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="products-grid">
+            <div class="product-card">
+                <svg class="product-icon" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="40" fill="#f1c40f" />
+                    <text x="50" y="55" text-anchor="middle" fill="#fff">ТС</text>
+                </svg>
+                <h3 class="product-title">Техническая соль</h3>
+                <p class="product-description">Высококачественная техническая соль для промышленного использования</p>
+            </div>
+
+            <div class="product-card">
+                <svg class="product-icon" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="40" fill="#3498db" />
+                    <text x="50" y="55" text-anchor="middle" fill="#fff">ПС</text>
+                </svg>
+                <h3 class="product-title">Пищевая соль</h3>
+                <p class="product-description">Очищенная пищевая соль высшего качества</p>
+            </div>
+
+            <div class="product-card">
+                <svg class="product-icon" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="40" fill="#e74c3c" />
+                    <text x="50" y="55" text-anchor="middle" fill="#fff">КС</text>
+                </svg>
+                <h3 class="product-title">Кормовая соль</h3>
+                <p class="product-description">Специальная соль для животноводства</p>
+            </div>
+
+            <div class="product-card">
+                <svg class="product-icon" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="40" fill="#2ecc71" />
+                    <text x="50" y="55" text-anchor="middle" fill="#fff">ТБ</text>
+                </svg>
+                <h3 class="product-title">Таблетированная соль</h3>
+                <p class="product-description">Соль в таблетках для водоочистки</p>
+            </div>
+        </div>
+        <div class="products-grid">
+            <div class="product-card">
+                <svg class="product-icon" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="40" fill="#f1c40f" />
+                    <text x="50" y="55" text-anchor="middle" fill="#fff">ТС</text>
+                </svg>
+                <h3 class="product-title">Техническая соль</h3>
+                <p class="product-description">Высококачественная техническая соль для промышленного использования</p>
+            </div>
+
+            <div class="product-card">
+                <svg class="product-icon" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="40" fill="#3498db" />
+                    <text x="50" y="55" text-anchor="middle" fill="#fff">ПС</text>
+                </svg>
+                <h3 class="product-title">Пищевая соль</h3>
+                <p class="product-description">Очищенная пищевая соль высшего качества</p>
+            </div>
+
+            <div class="product-card">
+                <svg class="product-icon" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="40" fill="#e74c3c" />
+                    <text x="50" y="55" text-anchor="middle" fill="#fff">КС</text>
+                </svg>
+                <h3 class="product-title">Кормовая соль</h3>
+                <p class="product-description">Специальная соль для животноводства</p>
+            </div>
+
+            <div class="product-card">
+                <svg class="product-icon" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="40" fill="#2ecc71" />
+                    <text x="50" y="55" text-anchor="middle" fill="#fff">ТБ</text>
+                </svg>
+                <h3 class="product-title">Таблетированная соль</h3>
+                <p class="product-description">Соль в таблетках для водоочистки</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p>© 2024 СольТрейд - Все права защищены</p>
+            <p>г. Москва, ул. Солевая, 123 | Тел: +7 (999) 123-45-67 | Email: info@salt-trade.ru</p>
+        </div>
+    </footer>
+</body></html>
